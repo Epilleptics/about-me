@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AboutComponent } from './about.component';
 import { RoundImgComponent } from './round-img/round-img.component';
+import { LinePipe } from '../shared/line/line.pipe';
 
 const ABOUT_ROUTES = [
 	{path: '', component: AboutComponent}
@@ -13,7 +14,8 @@ const ABOUT_ROUTES = [
 @NgModule({
 	declarations: [
 		AboutComponent,
-		RoundImgComponent
+		RoundImgComponent,
+		LinePipe
 	],
 	imports: [
 		FlexLayoutModule,
