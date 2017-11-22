@@ -1,0 +1,8 @@
+<a [href]="link">
+	<div class="am-footer-img" *ngIf="showImage">
+		<ng-content></ng-content>
+	</div>
+	<span>
+        {{name || link}}
+    </span>
+</a>

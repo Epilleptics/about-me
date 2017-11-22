@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+@import "app/variables";
+
+body, html {
+	background-color: $primary-background-color;
+	position: relative;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}

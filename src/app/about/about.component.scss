@@ -1,0 +1,26 @@
+@import '../variables';
+
+.am-flex-header {
+	width: 100%;
+}
+
+.am-headline {
+	border-bottom: 1px solid $accent-font-color;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+
+	.am-headline-content {
+		align-self: center;
+		color: $accent-font-color;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+span {
+	display: block;
+	padding-bottom: 15px;
+	color: $primary-font-color;
+}

@@ -1,0 +1,23 @@
+@import "../../variables";
+
+:host {
+	padding: 0 10px;
+}
+
+a, a:active {
+	$size: 25px;
+	text-decoration: none;
+	color: $accent-font-color;
+	display: flex;
+	flex-direction: row;
+	line-height: $size;
+	.am-footer-img {
+		height: $size;
+		width: $size;
+		padding-right: 2.5px;
+
+		/deep/.color {
+			fill: $accent-font-color;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@import "../../variables";
+
+:host {
+	display: flex;
+	justify-content: center;
+}
+
+.round-image-container {
+	margin-top: -25px;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+	overflow: hidden;
+
+	img {
+		height: 100%;
+	}
+}

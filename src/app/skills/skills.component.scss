@@ -1,0 +1,9 @@
+.am-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	am-progress {
+		padding: 10px;
+	}
+}

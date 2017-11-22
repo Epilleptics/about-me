@@ -1,0 +1,8 @@
+<div>
+	<div class="am-content"
+	     fxFlex.gt-md="80%" fxFlexOffset.gt-md="10%"
+	     fxFlex="90%" fxFlexOffset="5%"
+	     fxLayout="row">
+		<am-progress *ngFor="let skill of skills" [score]="skill.score" [name]="skill.name" [image]="skill.image"></am-progress>
+	</div>
+</div>

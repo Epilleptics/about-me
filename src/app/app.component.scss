@@ -1,0 +1,50 @@
+@import "variables";
+
+:host {
+	display: block;
+	height: 100%;
+}
+
+.am-page {
+	height: 100%;
+
+	mat-sidenav {
+		padding: 20px;
+
+		&.nav.mat-drawer {
+			background-color: $primary-background-color;
+		}
+		span {
+			align-self: center;
+			padding: 0 5px;
+			margin-bottom: 15px;
+			color: $primary-font-color;
+			border-bottom: 1px solid $primary-font-color;
+		}
+		.mat-button {
+			/deep/ span {
+				color: $accent-font-color;
+			}
+		}
+	}
+
+	mat-toolbar {
+		button {
+			font-size: 1.1em;
+		}
+		span {
+			padding-right: 5px;
+		}
+	}
+
+	footer {
+		background-color: $primary-background-color;
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+	}
+}
+
+
+
+
