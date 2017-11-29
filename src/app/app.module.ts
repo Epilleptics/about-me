@@ -10,9 +10,12 @@ import { APP_ROUTES } from 'app/app.routes';
 import { AppComponent } from './app.component';
 import { FooterItemComponent } from './shared/footer-item/footer-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
-	providers: [],
+	providers: [
+		{ provide: LocationStrategy, useClass: HashLocationStrategy }
+	],
 	declarations: [
 		AppComponent,
 		FooterItemComponent
