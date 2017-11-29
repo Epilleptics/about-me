@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { FooterItemComponent } from './shared/footer-item/footer-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { Angulartics2Module } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 @NgModule({
 	providers: [
@@ -28,7 +30,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 		MatToolbarModule,
 		MatSidenavModule,
 		BrowserModule,
-		FlexLayoutModule
+		FlexLayoutModule,
+		Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
 	],
 	bootstrap: [AppComponent]
 })

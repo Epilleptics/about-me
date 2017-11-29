@@ -1,4 +1,7 @@
-<a [href]="link">
+<a [href]="link"
+   angulartics2On="click"
+   angularticsAction="Redirect"
+   [angularticsCategory]="name || link">
 	<div class="am-footer-img" *ngIf="showImage">
 		<ng-content></ng-content>
 	</div>
