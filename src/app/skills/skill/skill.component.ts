@@ -13,7 +13,7 @@ export class SkillComponent implements OnInit {
 
 	private initialStroke = 890;
 	private additionalStroke = 314;
-	private stroke: number;
+	stroke: number;
 
 	getScoreForDescription(): number {
 		return ~~(this.score * 100) / 10;
